@@ -13,7 +13,8 @@
   (all-defined-out))
 
 
-(define-ffi-definer define-scheme #f)
+(define-ffi-definer define-scheme #f
+                    #:default-make-fail make-not-available)
 
 
 (define-scheme close
